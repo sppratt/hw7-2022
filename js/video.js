@@ -16,7 +16,7 @@ window.addEventListener("load", function() {
 const play = document.getElementById("play");
 const slider = document.getElementById("slider");
 play.addEventListener("click", function() {
-	console.log('play button clicked on');
+	console.log("clicked on play button");
 	video.play();
 	video.volume = (slider.value / 100);
 	document.getElementById("volume").textContent = video.volume*100 + "%";
@@ -26,7 +26,7 @@ play.addEventListener("click", function() {
 //pause button
 const pause = document.getElementById("pause");
 pause.addEventListener("click", function() {
-	console.log('pause button clicked on');
+	console.log("clicked on pause button");
 	video.pause();
 });
 //slow down
@@ -53,7 +53,7 @@ skip.addEventListener("click", function() {
 //mute 
 const mute = document.getElementById("mute");
 mute.addEventListener("click", function() {
-	console.log("mute clicked on");
+	console.log("clicked on mute");
 	if (video.muted) {
 		video.muted = false;
 	}
@@ -63,20 +63,20 @@ mute.addEventListener("click", function() {
 });
 //volume slider
 slider.addEventListener("click", function() {
-	console.log("volume slider clicked on");
+	console.log("clicked on volume slider");
 	video.volume = (slider.value / 100);
 	document.getElementById("volume").textContent = video.volume*100 + "%";
 });
 //styled
 const styled = document.getElementById("vintage");
 styled.addEventListener("click", function() {
-	console.log("styled clicked");
+	console.log("clicked on styled");
 	video.style = video.classList.add("oldSchool");
 });
 //original
 const original = document.getElementById("orig");
 original.addEventListener("click", function() {
-	console.log("original clicked");
+	console.log("clicked on original");
 	video.style = video.classList.remove("oldSchool");
 });
 
