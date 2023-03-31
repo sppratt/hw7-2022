@@ -4,14 +4,13 @@
 // 	console.log("Play Video");
 // });
 
+const video = document.getElementById("player1");
 //page load
 window.addEventListener("load", function() {
 	console.log("Good job opening the window");
 	document.querySelector("video").autoplay = false;
 	document.querySelector("video").loop = false;
 });
-
-const video = document.getElementById("player1");
 
 //play button
 const play = document.getElementById("play");
